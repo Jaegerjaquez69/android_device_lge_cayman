@@ -3,15 +3,6 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/lge/cayman/BoardConfigVendor.mk
 
-TARGET_ARCH := arm
-TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM :=  msm8660
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a7
-ARCH_ARM_HAVE_TLS_REGISTER := true
-
 # Architecture
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -24,7 +15,7 @@ TARGET_CPU_VARIANT := cortex-a7
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
-COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DQCOM_HARDWARE -DNO_QCOM_MVS
+COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DQCOM_HARDWARE -DNO_QCOM_MVS -DLGE_MSM8660
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8660
@@ -38,6 +29,7 @@ TARGET_BOOTLOADER_BOARD_NAME := cayman
 BOARD_KERNEL_CMDLINE := console=ttyDCC0,115200,n8 androidboot.hardware=cayman_sprint_us loglevel=1
 BOARD_KERNEL_BASE := 0x40200000
 BOARD_KERNEL_PAGESIZE := 2048
+BOARD_FORCE_RAMDISK_ADDRESS := 0x41a00000
 
 # Partition Information
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
