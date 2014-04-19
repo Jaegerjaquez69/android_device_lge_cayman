@@ -12,11 +12,11 @@ PRODUCT_RELEASE_NAME := cayman
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/lge/cayman/device_cayman.mk)
+$(call inherit-product, device/lge/ls840/device_ls840.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cayman
-PRODUCT_NAME := cm_cayman
+PRODUCT_NAME := cm_ls840
 PRODUCT_BRAND := lge
-PRODUCT_MODEL := cayman
+PRODUCT_MODEL := ls840
 PRODUCT_MANUFACTURER := lge
