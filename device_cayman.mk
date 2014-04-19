@@ -5,7 +5,7 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 $(call inherit-product-if-exists, vendor/lge/ls840/ls840-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/cayman/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/ls840/overlay
 
 LOCAL_PATH := device/lge/ls840
 ifeq ($(TARGET_PREBUILT_KERNEL),)
