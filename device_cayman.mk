@@ -20,8 +20,8 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_cayman
-PRODUCT_DEVICE := cayman
+PRODUCT_NAME := full_ls840
+PRODUCT_DEVICE := ls840
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := ls840
 PRODUCT_MANUFACTURER := lge
