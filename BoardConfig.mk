@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/lge/cayman/BoardConfigVendor.mk
+-include vendor/lge/ls840/BoardConfigVendor.mk
 
 # Architecture
 TARGET_ARCH := arm
@@ -51,7 +51,7 @@ BOARD_USES_MMCUTILS := true
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 #BOARD_HAS_LARGE_FILESYSTEM := true
 
-TARGET_PREBUILT_KERNEL := device/lge/cayman/kernel
+TARGET_PREBUILT_KERNEL := device/lge/ls840/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
@@ -66,3 +66,14 @@ DEVICE_RESOLUTION := 480x800
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TW_FLASH_FROM_STORAGE := true
 TW_NO_REBOOT_BOOTLOADER := true
+
+# Charging mode
+BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
+BOARD_BATTERY_DEVICE_NAME := "battery"
+#BOARD_CHARGER_RES := device/lge/ls840/res/charger
+
+# Kernel Config
+TARGET_PREBUILT_KERNEL := device/lge/ls840/kernel
+TARGET_KERNEL_SOURCE := kernel/lge/ls840
+TARGET_KERNEL_CONFIG := cyanogenmod_ls840_defconfig
+
