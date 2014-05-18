@@ -1,6 +1,6 @@
 #!/sbin/sh
 
-sleep 3
+# Script by Tyler Montgomery ( http://thecubed.com )
 
 # This script is ran right after recovery is launched.
 # also, launch this script if you're stuck in a bootloop!
