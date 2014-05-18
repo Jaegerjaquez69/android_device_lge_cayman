@@ -64,6 +64,10 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TW_FLASH_FROM_STORAGE := true
 TW_NO_REBOOT_BOOTLOADER := true
 
+# Recovery Reboot Fix
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
+
 # Charging mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_BATTERY_DEVICE_NAME := "battery"
