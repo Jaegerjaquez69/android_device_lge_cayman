@@ -113,5 +113,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    device/lge/ls840/usr/idc/touch_dev.idc:system/usr/idc/touch-dev.idc \
    device/lge/ls840/usr/idc/qwerty.idc:system/usr/idc/qwerty.idc \
-   device/lge/ls840/usr/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
+   device/lge/ls840/usr/idc/qwerty2.idc:system/usr/idc/qwerty2.idc
+
+# Recovery Reboot Fix
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
    
